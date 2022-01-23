@@ -10,7 +10,7 @@ const App = () => {
   // This will be the state that holds the city name
   const [userInput, setUserInput] = useState('')
   // This will be the state that holds the forecast
-
+  const [forecastArr, setForecastArr] = useState([])
   // This is the function that get's the user input from the Form component
   const getUserInput = (e) => {
     e.preventDefault()
@@ -33,7 +33,7 @@ const getResCities = (res) => {
         console.log('This is my user selected city data', res.data)
         let results = res.data
         let cityResults = results.filter(obj => {
-          return obj.result_type === "city" && obj.city_name === userInput
+          return obj.result_type === "city" && obj.city_slug === userInput.toLowerCase()
         })
         console.log('the city:', cityResults[0])
         return cityResults
@@ -46,7 +46,8 @@ const getResCities = (res) => {
         url: `${openWeatherUrl}lat=${lat}&lon=${long}&units=metric&appid=${API_KEY}`
       })
       .then((res) => {
-        console.log('City Weather API: ', res)
+        setForecastArr(res.data.daily)
+        console.log('City Weather API: ', res.data.daily)
       })      
     })
     .catch(error => console.log(error))
@@ -56,7 +57,7 @@ const getResCities = (res) => {
   return (
     <Fragment>
       <Routes>
-        <Route path='/' element={<Form getUserInput={getUserInput}/>} ></Route>
+        <Route path='/' element={<Form getUserInput={getUserInput} cityWeather={forecastArr}/>} ></Route>
       </Routes>
     </Fragment>
   );
