@@ -1,3 +1,5 @@
+## Preview
+
 ![image](https://user-images.githubusercontent.com/62188104/150821481-8f252018-28ed-4012-b7db-a3e6b1e65d07.png)
 ![image](https://user-images.githubusercontent.com/62188104/150821631-ba565b33-b424-4aad-98d8-31c3532e4b13.png)
 
@@ -6,7 +8,7 @@
 
 You can visit the live deployment of the app at: TBD
 
-To run locally, please follow the next two steps:
+To run locally, please follow the next three steps:
 
 Step 1
 ### Clone the Repository
