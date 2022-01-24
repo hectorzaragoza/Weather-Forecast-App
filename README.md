@@ -1,6 +1,6 @@
 ## Available Scripts
 
-You can visit the live deployment of the app at: 
+You can visit the live deployment of the app at: TBD
 
 To run locally, please follow the next two steps:
 
@@ -21,8 +21,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 
