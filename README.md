@@ -1,4 +1,6 @@
 ## Project: Check the weather forecast for cities in Mexico.
+#### Application uses the OpenWeatherMap API to retrieve weather data, filter through properties in React, and display the minimum and maximum temperature for the next 7 days in Celsius.
+
 ### Preview
 ![image](https://user-images.githubusercontent.com/62188104/150821481-8f252018-28ed-4012-b7db-a3e6b1e65d07.png)
 ![image](https://user-images.githubusercontent.com/62188104/150821631-ba565b33-b424-4aad-98d8-31c3532e4b13.png)
